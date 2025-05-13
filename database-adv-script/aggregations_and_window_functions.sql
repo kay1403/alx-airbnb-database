@@ -13,7 +13,7 @@ ORDER BY total_bookings DESC;
 SELECT
     property_id,
     total_bookings,
-    ROW_NUMBER() OVER (ORDER BY total_bookings DESC) AS rank
+    ROW_NUMBER() OVER (ORDER BY total_bookings DESC) AS property_rank
 FROM (
     SELECT
         b.property_id,
