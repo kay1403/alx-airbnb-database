@@ -7,3 +7,8 @@
 ### Subqueries
 1. **Non-correlated**: Filters properties based on average review rating.
 2. **Correlated**: Filters users by dynamically counting their bookings.
+
+### Aggregations & Window Functions
+
+- Used `COUNT` and `GROUP BY` to total bookings per user.
+- Used `RANK()` window function to rank properties by number of bookings.
